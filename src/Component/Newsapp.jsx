@@ -7,7 +7,7 @@ const Newsapp = () => {
 const[newsData,setNewsData] = useState(null)
   const API_KEY = "486ba8fb6dd54c2bb4862220c6c4886d";
 
-  const getData = async() =>{                //promise will happen data-- 1.da 2.data pending 3.data nhi milenga to resolve it we will use async await
+  const getData = async() =>{                //promise will happen data-- 1.data mileg 2.data pending 3.data nhi milenga to resolve it we will use async await
         const response = await fetch(`https://newsapi.org/v2/everything?q=${search}&apiKey=${API_KEY}`)    //APi_Key==>template literal  //Js fetch method to fetch data from api
         const jsonData = await response.json(); 
         console.log(jsonData.articles);
